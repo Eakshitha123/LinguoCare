@@ -4,11 +4,16 @@
     padding: 40px 12%;
     text-align: center;
     font-size: 18px;
+
+margin-top: 50px;
+    
 }
 
-h2 {
+.faq h2 {
     font-weight: 500;
     font-size: 40px;
+   
+   
 }
 
 ul {
@@ -19,6 +24,7 @@ ul {
 .questions {
     margin: 60px auto;
     max-width: 750px;
+ 
 }
 
 .questions li {
@@ -30,13 +36,14 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #303030;
-    padding: 20px;
+    background-color: #987D9A;
+    padding: 10px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bolder;
     cursor: pointer;
     color: white;
     margin-bottom: 2px;
+    color:black;
 }
 
 .faq-icon {
@@ -45,8 +52,8 @@ ul {
 }
 
 .answer {
-    background-color: #303030;
-    color: white;
+    background-color: #987D9A;
+    color: black;
     text-align: left;
     padding: 0 20px;
     max-height: 0;
@@ -54,11 +61,12 @@ ul {
     transition: max-height 0.5s ease;
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: bolder;
 }
 
 .answer.open {
     max-height: 600px;
-    padding: 20px;
+    padding: 10px;
 }
 
 
