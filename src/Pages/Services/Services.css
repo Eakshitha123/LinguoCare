@@ -13,12 +13,7 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 5px 0;
-    
     gap: 20px; /* Space between text and image */
-}
-.box1 img{
-
-    width:20px;
 }
 
 .text {
