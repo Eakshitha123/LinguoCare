@@ -1,13 +1,12 @@
 import React from 'react'
-
 import  './Home.css'
+import Faq from '../../Components/Faq/Faq'
 
 const Home = () => {
   return (
-   <>
-   
-   <Faq/>
-   </>
+   <div>
+    <Faq/>
+   </div>
   )
 }
 
