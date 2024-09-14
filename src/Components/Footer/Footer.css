@@ -1,21 +1,20 @@
 .footer {
     display: flex;
     flex-direction: column;
-    border-top: 6px solid purple;
+    border-top: 6px solid gray;
     margin-top: 30px;
     width: 100%;
-   
 }
 
 .title {
-    margin-left: 210px;
+    margin-left: 150px;
     margin-top: 100px;
-    color: purple;
+    color: #121de8;
+  
 }
 
 .footer h2 {
     font-size: 15px;
-    font-weight: 200;
     font-weight: bolder;
 }
 
@@ -32,24 +31,42 @@
     padding: 20px;
     flex-basis: 18%;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin-right: 12px;
 }
 
 .links a {
     text-decoration: none;
     font-size: 14px;
-    color: purple;
+    color: #4207cb;
     padding: 10px;
     font-weight: bolder;
 }
 
-.description
-{
-    font-weight: bolder;
-   background-color: aqua;
-   display: flex;
-   
-
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #5e12eb;
+    margin-top: 30px;
 }
 
+.last button {
+    margin-bottom: 33px;
+}
+
+.description {
+    text-align: center; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    line-height: 1.6; 
+    font-size: 15px;
+    margin-bottom: 20px; 
+}
+
+.copyrighttext {
+    text-align: center; 
+    font-size: 16px;
+    width: 100%;
+    font-weight: bolder;
+}
