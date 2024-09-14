@@ -1,0 +1,43 @@
+/* /src/components/Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FEFBDB; /* Background theme color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #987D9A; /* Main logo color */
+    margin: 0;
+  }
+  
+  .description {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #BB9AB1; /* Description text color */
+    text-align: right; /* Align description to the right */
+  }
+  
+  .description p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .description {
+      padding-left: 0;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
