@@ -1,23 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 
-import { useState } from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
-import Services from './Pages/Services/Services'
 
-const App= ()=> 
-  {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [count, setCount] = useState(0);
+
   return (
-      <>
+    <>
     <div className='app'>
-      <Navbar/>
-     
-     <Services/>
-     <Footer/>
-     </>
+      <Navbar />
+      
+      <Footer />
+    </div>  
+    </>
   );
-  
-}
+};
 
 export default App;
