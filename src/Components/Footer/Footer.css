@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid purple;
+    margin-top: 30px;
+    width: 100%;
+   
+}
+
+.title {
+    margin-left: 210px;
+    margin-top: 100px;
+    color: purple;
+}
+
+.footer h2 {
+    font-size: 15px;
+    font-weight: 200;
+    font-weight: bolder;
+}
+
+.links {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 18%;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-right: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: purple;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.description
+{
+    font-weight: bolder;
+   background-color: aqua;
+   display: flex;
+   
+
+}
+
