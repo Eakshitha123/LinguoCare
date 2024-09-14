@@ -36,14 +36,14 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #987D9A;
+    background-color:#B6BBC4;
     padding: 10px;
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
     color: white;
     margin-bottom: 2px;
-    color:black;
+    color:#161A30;
 }
 
 .faq-icon {
