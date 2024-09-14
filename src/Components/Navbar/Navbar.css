@@ -1,41 +1,51 @@
-/* /src/components/Header.css */
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .description {
-    flex: 1;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #0056b3;
-  }
-  
+
+.navbar {
+  display: flex;
+  background-color: #987D9A;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  margin-top: 0;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+.navbar h2
+{
+  color:white;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+.links-container {
+  overflow: hidden; 
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  color:white;
+}
+
+.links li {
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  position: relative;
+  transition: color 0.3s ease; 
+}
+
+
+.links li:hover {
+  color: #EECEB9; 
+}
+
+
+
+
+

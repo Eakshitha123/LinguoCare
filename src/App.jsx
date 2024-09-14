@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
+
+import Faq from './Components/Faq/Faq'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,8 +9,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      
-      <Footer/>
+    <Faq/>
+     
     </>
   )
 }
