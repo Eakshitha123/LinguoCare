@@ -12,6 +12,7 @@ margin-top: 50px;
 .faq h2 {
     font-weight: 500;
     font-size: 40px;
+    color: #161A30;
    
    
 }
@@ -52,8 +53,8 @@ ul {
 }
 
 .answer {
-    background-color: #987D9A;
-    color: black;
+    background-color:white;
+    color:#161A30;
     text-align: left;
     padding: 0 20px;
     max-height: 0;
@@ -68,5 +69,3 @@ ul {
     max-height: 600px;
     padding: 10px;
 }
-
-
