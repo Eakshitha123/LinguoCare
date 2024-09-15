@@ -5,6 +5,7 @@ import { assets } from '../../assets/assets';
 const Services = () => {
   return (
     <>
+    <h1>Our Services</h1>
       <div>
         <div className="features">
           <div className="box1">

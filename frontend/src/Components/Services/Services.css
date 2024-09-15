@@ -37,9 +37,13 @@
     border-radius: 25px;;
     
 }
+h1{
+    text-align: center;
+    color:#161A30;
+}
 .text h2{
     margin-bottom: 12px;
-    color:#161A30
+    color:#161A30;
 }
 .text p{
     line-height: 30px;
