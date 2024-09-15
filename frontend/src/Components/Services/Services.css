@@ -2,7 +2,8 @@
  {
     padding:50px 12%;
     font-size:18px;
-  
+    margin-top: 0;
+  background-color: #F0ECE5;
 
  }
  .box1
@@ -16,6 +17,10 @@
    
    
    
+}
+.service
+{
+    background-color: #F0ECE5;
 }
 .text
 {
@@ -40,7 +45,9 @@
 h1{
     text-align: center;
     color:#161A30;
+    
 }
+
 .text h2{
     margin-bottom: 12px;
     color:#161A30;
