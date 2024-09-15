@@ -9,6 +9,7 @@ import Services from '../../Components/Services/Services';
 import About from '../../Components/About/About';
 import Team from '../../Components/Team/Team';
 import Navbar from '../../Components/Navbar/Navbar'; // Make sure the path is correct
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -38,6 +39,7 @@ const Home = () => {
       <Faq ref={faqRef} />
       <Team ref={teamRef} />
       <ContactUs ref={contactRef} />
+      <Footer/>
     </div>
   );
 };

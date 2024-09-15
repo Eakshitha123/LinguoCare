@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './LoginPopup.css';
 
 const LoginPopupT = ({ setShowLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate(); // Hook to navigate to another page
 
+  // Handle Therapist login
   const handleLogin = (e) => {
     e.preventDefault();
     console.log('Therapist Login Submitted');
+    navigate('/therapist'); // Redirect to Therapist page on successful login
   };
 
+  // Handle Therapist signup
   const handleSignup = (e) => {
     e.preventDefault();
     console.log('Therapist Signup Submitted');
+    navigate('/therapist'); // Redirect to Therapist page on successful signup
   };
 
   const loginForm = (
