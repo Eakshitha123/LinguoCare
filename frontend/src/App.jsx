@@ -23,9 +23,6 @@ const App = () => {
           <Route path='/supervisor' element={<Supervisor />} /> {/* Supervisor Page */}
         </Routes>
       </div>
-
-      {/* Footer will be displayed on all pages */}
-      <Footer />
     </>
   );
 };
