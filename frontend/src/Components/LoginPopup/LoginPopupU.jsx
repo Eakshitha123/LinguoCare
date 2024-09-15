@@ -14,7 +14,8 @@ const LoginPopupU = ({ setShowLogin }) => {
     console.log('User Signup Submitted');
   };
 
-  const loginForm = (
+  const loginForm = 
+  (
     <form onSubmit={handleLogin} className="login-form">
       <h2>User Login</h2>
       <input type="email" required placeholder="Enter your email" />
