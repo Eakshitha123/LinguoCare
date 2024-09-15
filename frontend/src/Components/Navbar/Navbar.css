@@ -39,6 +39,7 @@
   font-weight: bolder;
   position: relative;
   transition: color 0.3s ease; 
+  text-decoration: none;
 }
 
 .link li:hover{
