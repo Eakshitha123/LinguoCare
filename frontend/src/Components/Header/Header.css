@@ -1,43 +1,51 @@
-/* /src/components/Header.css */
+.header-container {
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Keep the image centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #FEFBDB; /* Background theme color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #987D9A; /* Main logo color */
-    margin: 0;
-  }
-  
-  .description {
-    flex: 1;
-    padding-left: 20px;
-    font-size: 16px;
-    color: #BB9AB1; /* Description text color */
-    text-align: right; /* Align description to the right */
-  }
-  
-  .description p {
-    margin: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .description {
-      padding-left: 0;
-      text-align: center;
-      margin-top: 10px;
-    }
-  }
-  
+.header-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay for readability */
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #218838;
+}
+
+/* Styles for content below the header section */
+.page-content {
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}

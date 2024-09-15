@@ -1,20 +1,16 @@
-
-
 import React from 'react';
-import './Header.css'; // Importing the CSS file
+import './Header.css';
+import { assets } from '../../assets/assets'; // Importing assets from assets.js
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="logo">
-        <h1>LinguoCare</h1>
-      </div>
-      <div className="description">
+    <header className="header-container" style={{ backgroundImage: `url(${assets.header})` }}>
+      <div className="header-content">
+        <h1>Welcome to Our Website</h1>
         <p>
-          Streamlining speech-language therapy with digital solutions for case management,
-          clinical rating, and progress documentation. Helping therapists and supervisors
-          provide efficient care.
+          Explore our services and solutions designed to meet your needs. We are here to help you grow!
         </p>
+        <button className="get-started-button">Get Started</button>
       </div>
     </header>
   );
