@@ -2,16 +2,21 @@
 
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ scrollToRef, refs }) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="navbar">
-      <div className="logo">
+      <div className="logo" onClick={scrollToTop}>
         <h2>LinguoCare</h2>
       </div>
 
       <div className="link">
-        <li onClick={() => scrollToRef(refs.header)}>Home</li>
+        <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
         <li onClick={() => scrollToRef(refs.services)}>Services</li>
         <li onClick={() => scrollToRef(refs.about)}>About Us</li>
         <li onClick={() => scrollToRef(refs.faq)}>FAQs</li>
