@@ -1,4 +1,5 @@
 .navbar {
+  position: fixed;
   display: flex;
   background-color:#161A30;
   align-items: center;
@@ -6,6 +7,7 @@
   padding: 3px;
   margin-top: 0;
   height: 80px;
+  top:0;
 
   width: 100%;
 }
@@ -22,7 +24,7 @@
   overflow: hidden; 
 }
 
-.links {
+.link {
   list-style: none;
   display: flex;
   align-items: center;
@@ -30,7 +32,7 @@
   color:#F0ECE5;
 }
 
-.links li {
+.link li {
   padding: 0 15px;
   cursor: pointer;
   font-weight: bolder;
@@ -38,7 +40,7 @@
   transition: color 0.3s ease; 
 }
 
-
-.links li:hover {
-  color:pink; 
+.link li:hover{
+  color:rgb(105, 94, 248);
+  font-size: large;
 }
