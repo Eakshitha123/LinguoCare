@@ -4,12 +4,12 @@ import picture3 from './picture3.png'
 import picture4 from './picture4.png'
 import picture5 from './picture5.png'
 import picture6 from './picture6.png'
+import header from './header.png'
 export const assets = {
     picture1,
     picture2,
     picture3,
     picture4,
     picture5,
-    picture6
-  
-}
+    picture6,
+    header}

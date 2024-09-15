@@ -13,7 +13,7 @@ const Navbar = () => {
         <h2>LinguoCare</h2>
       </div>
 
-      <div className="links">
+      <div className="link">
       
           <li>Home</li>
           <li>Services</li>

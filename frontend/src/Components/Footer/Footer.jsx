@@ -24,13 +24,13 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>123-456-34533</li>
-            <li>contact@linguocare.com</li>
+            <li>linguocare@gmail.com</li>
           </ul>
         </div>
       </div>
 
         <div className="copyrighttext">
-          &copy; {new Date().getFullYear()} Speech Therapy Center. All rights reserved.
+          &copy; {new Date().getFullYear()} LinguoCare. All rights reserved.
         </div>
     </div>
   );
