@@ -1,7 +1,7 @@
 // /src/components/Header.js
 
 import React from 'react';
-//  import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import './Navbar.css'; // Importing the CSS file
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>About Us</li>
           <li>FAQs</li>
           <li>Contact Us</li> 
-          <li>Login/Sign Up</li>
+          <li><Link to="/Login">Login/Sign Up</Link></li>
           
       </div>
     </div>
