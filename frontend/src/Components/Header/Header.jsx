@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <header className="header-container" style={{ backgroundImage: `url(${assets.header})` }}>
       <div className="header-content">
-        <h1>Welcome to Our Website</h1>
+        <h1>Welcome to LinguoCare</h1>
         <p>
-          Explore our services and solutions designed to meet your needs. We are here to help you grow!
+        Unlock the power of speech with LinguoCare's expert therapy solutions. From personalized therapy plans to real-time progress tracking, we're here to help you speak with confidence and clarity. Start your journey to better communication today!
         </p>
         <button className="get-started-button">Get Started</button>
       </div>
