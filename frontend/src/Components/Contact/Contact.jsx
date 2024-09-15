@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+// /src/Components/Contact/Contact.js
+
+import React, { forwardRef, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
-const ContactUs = () => {
+const ContactUs = forwardRef((props, ref) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +28,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-us">
+    <div ref={ref} className="contact-us">
       <h2>Contact Us</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
@@ -39,12 +41,12 @@ const ContactUs = () => {
           <input type="text" id="subject" name="subject" required placeholder='Subject'/>
         </div>
         <div className="form-group">
-          <textarea id="message" name="message" cols="40" rows="4" required placeholder='Enter your message' ></textarea>
+          <textarea id="message" name="message" cols="40" rows="4" required placeholder='Enter your message'></textarea>
         </div>
         <button type="submit">Send Message</button>
       </form>
     </div>
   );
-};
+});
 
 export default ContactUs;

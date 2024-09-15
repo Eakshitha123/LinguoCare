@@ -1,9 +1,11 @@
-import React from 'react';
+// /src/Components/About/About.js
+
+import React, { forwardRef } from 'react';
 import './About.css'; // Ensure you create this CSS file for styling
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <section className="about">
+    <section ref={ref} className="about">
       <div className="about-content">
         <h2>About Us</h2>
         <p>
@@ -16,6 +18,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

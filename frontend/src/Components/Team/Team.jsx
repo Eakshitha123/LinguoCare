@@ -1,8 +1,10 @@
-import React from 'react';
+// /src/Components/Team/Team.js
+
+import React, { forwardRef } from 'react';
 import './Team.css'; // Import the CSS file for styling
 import { assets } from '../../assets/assets'; // Import assets from your assets directory
 
-const Team = () => {
+const Team = forwardRef((props, ref) => {
   // Array of team members with imported image paths
   const members = [
     {
@@ -23,22 +25,21 @@ const Team = () => {
   ];
 
   return (
-    <div className="team">
-    <h2 class="teamname">Our Team</h2>
-    <div className="team-container">
-       
-      {members.map((member, index) => (
-        <div key={index} className="team-member">
-          <div className="team-member-picture-container">
-            <img src={member.picture} alt={member.name} className="team-member-picture" />
+    <div ref={ref} className="team">
+      <h2 className="teamname">Our Team</h2>
+      <div className="team-container">
+        {members.map((member, index) => (
+          <div key={index} className="team-member">
+            <div className="team-member-picture-container">
+              <img src={member.picture} alt={member.name} className="team-member-picture" />
+            </div>
+            <h3 className="team-member-name">{member.name}</h3>
+            <p className="team-member-description">{member.description}</p>
           </div>
-          <h3 className="team-member-name">{member.name}</h3>
-          <p className="team-member-description">{member.description}</p>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
-};
+});
 
 export default Team;

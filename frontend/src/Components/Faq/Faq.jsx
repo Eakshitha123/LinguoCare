@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+// /src/Components/Faq/Faq.js
+
+import React, { forwardRef, useState } from 'react';
 import './Faq.css'; // Import the CSS file for styling
 
-const Faq = () => {
+const Faq = forwardRef((props, ref) => {
   // State to track the index of the active (open) FAQ
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -36,7 +38,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="faq">
+    <div ref={ref} className="faq">
       <h2>Frequently Asked Questions</h2>
       <ul className="questions">
         {faqData.map((item, index) => (
@@ -60,6 +62,6 @@ const Faq = () => {
       </ul>
     </div>
   );
-};
+});
 
 export default Faq;
