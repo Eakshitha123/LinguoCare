@@ -23,7 +23,7 @@ const Team = () => {
   ];
 
   return (
-    <>
+    <div className="team">
     <h2 class="teamname">Our Team</h2>
     <div className="team-container">
        
@@ -37,7 +37,7 @@ const Team = () => {
         </div>
       ))}
     </div>
-    </>
+    </div>
   );
 };
 
