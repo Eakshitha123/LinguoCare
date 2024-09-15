@@ -5,14 +5,7 @@
     justify-content: center;
     height: 100vh;
     background-color: #F0ECE5; /* Light background */
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #31304D; 
-    margin-bottom:  60px;/* Dark theme for text */
-    margin-top:80px;
+    margin-top: 50px;
 }
 
 .login-options {
@@ -22,7 +15,7 @@ h1 {
 }
 
 .login-box {
-    background-color: #31304D; /* Dark box background */
+    background-color:#161A30; /* Dark box background */
     color: white;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for attractiveness */

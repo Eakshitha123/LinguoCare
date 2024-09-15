@@ -6,7 +6,6 @@ import { assets } from '../../assets/assets';
 const Login = () => {
     return (
         <div className="login-container">
-            <h1 className='login-title'>Login / Sign Up</h1>
             <div className="login-options">
                 <div className="login-box">
                     <h2>User</h2>
