@@ -7,8 +7,9 @@ import Header from '../../Components/Header/Header'
 const Home = () => {
   return (
    <div>
-    <Services/>
+    
     <Header/>
+    <Services/>
     <Faq/>
     <ContactUs/>
    </div>
