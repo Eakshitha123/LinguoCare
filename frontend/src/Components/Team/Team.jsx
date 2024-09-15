@@ -10,17 +10,17 @@ const Team = forwardRef((props, ref) => {
     {
       name: 'Eakshitha',
       picture: assets.member1, // Assuming you have exported images from your assets file
-      description: 'John is a passionate software engineer with 5 years of experience in full-stack development.'
+      description: 'Eakshitha is a passionate software engineer with 5 years of experience in full-stack development.'
     },
     {
       name: 'Mahek',
       picture: assets.member2,
-      description: 'Jane is a skilled designer who specializes in creating user-friendly interfaces and experiences.'
+      description: 'Mahek is a skilled designer who specializes in creating user-friendly interfaces and experiences.'
     },
     {
       name: 'Sumithra',
       picture: assets.member3,
-      description: 'Alice is a project manager with a knack for organizing and leading teams to success.'
+      description: 'Sumithra is a project manager with a knack for organizing and leading teams to success.'
     }
   ];
 
