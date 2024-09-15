@@ -13,12 +13,10 @@ const App = () => {
   return (
     <>
       <div className='app'>
-        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} /> {/* Correct path */}
         </Routes>
-        <Footer />
       </div> 
     </>
   );

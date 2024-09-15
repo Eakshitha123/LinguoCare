@@ -6,6 +6,8 @@ import "./Login.css";
 import LoginPopupU from "../../Components/LoginPopup/LoginPopupU.jsx";
 import LoginPopupT from "../../Components/LoginPopup/LoginPopupT.jsx";
 import LoginPopupS from "../../Components/LoginPopup/LoginPopupS.jsx";
+import Navbar from '../../Components/Navbar/Navbar.jsx';
+import Footer from '../../Components/Footer/Footer.jsx';
 
 const Login = () => {
   // States to control the visibility of the login popups
@@ -14,6 +16,8 @@ const Login = () => {
   const [showSupervisorLogin, setShowSupervisorLogin] = useState(false);
 
   return (
+    <>
+    <Navbar/>
     <div className="login-container">
       <div className="login-options">
         {/* User Login Box */}
@@ -49,6 +53,9 @@ const Login = () => {
       {showTherapistLogin && <LoginPopupT setShowLogin={setShowTherapistLogin} />} {/* Therapist login popup */}
       {showSupervisorLogin && <LoginPopupS setShowLogin={setShowSupervisorLogin} />} {/* Supervisor login popup */}
     </div>
+    <Footer/>
+    </>
+    
   );
 };
 
