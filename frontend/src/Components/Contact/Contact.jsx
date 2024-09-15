@@ -27,7 +27,7 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us">
-      <h2>Send Us a Message</h2>
+      <h2>Contact Us</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <input type="text" id="name" name="user_name" placeholder='Name' required />
