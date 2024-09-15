@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './LoginPopup.css';
 
 const LoginPopupS = ({ setShowLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate(); // Hook to navigate to another page
 
+  // Handle Supervisor login
   const handleLogin = (e) => {
     e.preventDefault();
     console.log('Supervisor Login Submitted');
+    navigate('/supervisor'); // Redirect to Supervisor page on successful login
   };
 
+  // Handle Supervisor signup
   const handleSignup = (e) => {
     e.preventDefault();
     console.log('Supervisor Signup Submitted');
+    navigate('/supervisor'); // Redirect to Supervisor page on successful signup
   };
 
   const loginForm = (
