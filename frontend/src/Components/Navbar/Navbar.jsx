@@ -1,29 +1,25 @@
-// /src/components/Header.js
+// /src/Components/Navbar/Navbar.js
 
 import React from 'react';
- import { Link } from 'react-router-dom';
-import './Navbar.css'; // Importing the CSS file
+import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ scrollToRef, refs }) => {
   return (
-    <>
     <div className="navbar">
       <div className="logo">
-        {/* <img src={""}/> */}
         <h2>LinguoCare</h2>
       </div>
 
       <div className="link">
-      <li><Link to="/">Home</Link></li>
-          <li>Services</li>
-          <li>About Us</li>
-          <li>FAQs</li>
-          <li>Contact Us</li> 
-          <li><Link to="/Login">Login/Sign Up</Link></li>
-          
+        <li onClick={() => scrollToRef(refs.header)}>Home</li>
+        <li onClick={() => scrollToRef(refs.services)}>Services</li>
+        <li onClick={() => scrollToRef(refs.about)}>About Us</li>
+        <li onClick={() => scrollToRef(refs.faq)}>FAQs</li>
+        <li onClick={() => scrollToRef(refs.team)}>Our Team</li>
+        <li onClick={() => scrollToRef(refs.contact)}>Contact Us</li>
+        <li><a href="/Login">Login/Sign Up</a></li>
       </div>
     </div>
-    </>
   );
 };
 
