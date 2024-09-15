@@ -1,23 +1,26 @@
+/* /src/Components/Navbar/Navbar.css */
+
 .navbar {
   z-index: 3;
   position: fixed;
   display: flex;
-  background-color:#161A30;
+  background-color: #161A30;
   align-items: center;
   justify-content: space-between;
   padding: 3px;
   margin-top: 0;
   height: 80px;
-  top:0;
+  top: 0;
   width: 100%;
 }
-.navbar h2
-{
-  color:#F0ECE5;
+
+.navbar h2 {
+  color: #F0ECE5;
 }
 
 .logo {
   padding-left: 21px;
+  cursor: pointer;
 }
 
 .links-container {
@@ -25,12 +28,10 @@
 }
 
 .link {
-  
   list-style: none;
   display: flex;
   align-items: center;
   padding-right: 20px;
-  color:#F0ECE5;
 }
 
 .link li {
@@ -40,9 +41,26 @@
   position: relative;
   transition: color 0.3s ease; 
   text-decoration: none;
+  color: #F0ECE5; /* Ensure the text color matches */
 }
 
-.link li:hover{
-  color:#B6BBC4;
+.link li:hover {
+  color: #B6BBC4;
   font-size: large;
+}
+
+/* Remove the default list style */
+li {
+  list-style: none;
+}
+
+/* Ensure all links have the same style */
+.link a {
+  color: #F0ECE5; /* Matching text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.link a:hover {
+  color: #B6BBC4; /* Hover color for links */
+  font-size: large; /* Hover font size for links */
 }
