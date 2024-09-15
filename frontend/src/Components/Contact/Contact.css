@@ -43,6 +43,8 @@
     background-color:#B6BBC4;
     color: #161A30;
   }
-  
+  textarea {
+    resize: none;
+ }
   
   

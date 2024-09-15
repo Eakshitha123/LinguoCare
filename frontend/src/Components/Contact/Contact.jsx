@@ -39,7 +39,7 @@ const ContactUs = () => {
           <input type="text" id="subject" name="subject" required placeholder='Subject'/>
         </div>
         <div className="form-group">
-          <textarea id="message" name="message" rows="4" required placeholder='Enter your message' ></textarea>
+          <textarea id="message" name="message" cols="40" rows="4" required placeholder='Enter your message' ></textarea>
         </div>
         <button type="submit">Send Message</button>
       </form>

@@ -1,7 +1,7 @@
 .features
  {
     padding:50px 12%;
-    font-size:22px;
+    font-size:18px;
   
 
  }
@@ -26,22 +26,26 @@
 .pic
 {
     flex-basis: 50%;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
 }
 .pic img
 {
     display: block;
     margin: auto;
     width:70%;
-
+    transition: 1s;
     border-radius: 25px;;
     
 }
 .text h2{
     margin-bottom: 12px;
+    color:#161A30
 }
 .text p{
     line-height: 30px;
     font-weight: 200;
+}
+img:hover{
+    width:80%;
 }
 
