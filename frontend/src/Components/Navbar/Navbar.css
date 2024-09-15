@@ -9,7 +9,6 @@
   margin-top: 0;
   height: 80px;
   top:0;
-
   width: 100%;
 }
 .navbar h2
@@ -26,6 +25,7 @@
 }
 
 .link {
+  
   list-style: none;
   display: flex;
   align-items: center;
