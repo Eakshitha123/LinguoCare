@@ -1,0 +1,135 @@
+/* Overlay that darkens the background */
+.loginpopup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Container for the popup */
+.loginpopup {
+  background-color: #161A30; /* White background */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
+
+/* Close button in the top-right corner */
+.loginpopup .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #f3eded;
+  cursor: pointer;
+}
+
+/* Form styling */
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input field styling */
+.login-form input,
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus,
+.signup-form input:focus {
+  border-color: BLACK; /* GreBen border on focus */
+}
+
+/* Buttons for login and signup */
+.form-button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: background-color 0.3s ease;
+}
+.form-button{
+  background-color:white;
+  color: #161A30;
+}
+
+.form-button:hover {
+  background-color: #B6BBC4;
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+
+/* Link to toggle between login and signup */
+.link1 {
+  color: #dee7de;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+
+.link1:hover {
+  text-decoration: underline;
+  
+}
+
+/* Headings */
+.login-form h2,
+.signup-form h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f0e5e5;
+}
+
+/* Paragraph for toggle text */
+.login-form p,
+.signup-form p {
+  font-size: 15px;
+  color: #f7ebeb;
+}
+
+
+/* For small screens: ensure popup adjusts */
+@media (max-width: 600px) {
+  .loginpopup {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+  }
+  
+  .login-popup h2 {
+    font-size: 20px;
+  }
+  
+  .form-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
