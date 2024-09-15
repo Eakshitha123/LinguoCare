@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './LoginPopup.css';
 
 const LoginPopupU = ({ setShowLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const handleLogin = (e) => {
     e.preventDefault();
     console.log('User Login Submitted');
+    // Redirect to the User page after successful login
+    navigate('/user');
   };
 
   const handleSignup = (e) => {
     e.preventDefault();
     console.log('User Signup Submitted');
+    // Redirect to the User page after successful signup
+    navigate('/user');
   };
 
   const loginForm = (

@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
-import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-
-
 import Login from './Pages/Login/Login';
 
 const App = () => {
@@ -12,12 +10,18 @@ const App = () => {
 
   return (
     <>
+      {/* Navbar will be displayed on all pages */}
+      <Navbar />
+
       <div className='app'>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Login' element={<Login />} /> {/* Correct path */}
+          <Route path='/' element={<Home />} /> {/* Home Page */}
+          <Route path='/login' element={<Login />} /> {/* Login Page */}
         </Routes>
-      </div> 
+      </div>
+
+      {/* Footer will be displayed on all pages */}
+      <Footer />
     </>
   );
 };
