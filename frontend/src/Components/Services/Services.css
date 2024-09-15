@@ -1,0 +1,47 @@
+.features
+ {
+    padding:50px 12%;
+    font-size:22px;
+  
+
+ }
+ .box1
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:5px 0;
+   
+   
+   
+}
+.text
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ 
+}
+.pic
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;;
+}
+.pic img
+{
+    display: block;
+    margin: auto;
+    width:70%;
+
+    border-radius: 25px;;
+    
+}
+.text h2{
+    margin-bottom: 12px;
+}
+.text p{
+    line-height: 30px;
+    font-weight: 200;
+}
+
