@@ -12,6 +12,7 @@ h1 {
     font-size: 2em;
     color: #31304D; 
     margin-bottom:  60px;/* Dark theme for text */
+    margin-top:80px;
 }
 
 .login-options {
