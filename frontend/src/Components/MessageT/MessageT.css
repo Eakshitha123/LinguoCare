@@ -1,0 +1,35 @@
+/* /src/Components/MessageT/MessageT.css */
+.message-t {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .message-t h2 {
+    font-size: 28px;
+    color: #444;
+  }
+  
+  .message-t p {
+    color: #777;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  
+  .message-t button {
+    background-color: #28a745;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .message-t button:hover {
+    background-color: #218838;
+  }
+  

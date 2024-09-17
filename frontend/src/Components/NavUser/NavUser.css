@@ -1,0 +1,58 @@
+/* /src/Components/NavUser/NavUser.css */
+
+.navUser {
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    background-color: #161A30;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    margin-top: 0;
+    height: 80px;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navUser h2 {
+    color: #F0ECE5;
+  }
+  
+  .logo {
+    padding-left: 21px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    position: relative;
+    transition: color 0.3s ease;
+    color: #F0ECE5; /* Ensure the text color matches */
+  }
+  
+  .nav-links li:hover {
+    color: #B6BBC4;
+    font-size: large;
+  }
+  
+  /* Ensure all links have the same style */
+  .nav-links a {
+    color: #F0ECE5; /* Matching text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .nav-links a:hover {
+    color: #B6BBC4; /* Hover color for links */
+    font-size: large; /* Hover font size for links */
+  }
+  

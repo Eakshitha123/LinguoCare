@@ -1,0 +1,47 @@
+/* /src/Components/GetTherapist/GetTherapist.css */
+.get-therapist {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 40px;
+   width:1000px;
+  }
+  
+  .get-therapist h2 {
+    color: #0a0909;
+    font-size: 28px;
+  }
+
+  .pic1{
+
+    width:300px;
+    border-radius: 18px;
+  }
+  
+  .get-therapist p {
+    color: #666;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .get-therapist button {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .get-therapist button:hover {
+    background: linear-gradient(to right, #f5af19, #f12711);
+  }
+  

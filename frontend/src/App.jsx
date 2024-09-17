@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Therapist from './Pages/Therapist/Therapist'; // Therapist page
 import Supervisor from './Pages/Supervisor/Supervisor'; // Import the Supervisor page
+import User from './Pages/User/User';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <>
       {/* Navbar will be displayed on all pages */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className='app'>
         <Routes>
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/login' element={<Login />} /> {/* Login Page */}
           <Route path='/therapist' element={<Therapist />} /> {/* Therapist Page */}
           <Route path='/supervisor' element={<Supervisor />} /> {/* Supervisor Page */}
+          <Route path='/user' element={<User/>}/>
         </Routes>
       </div>
     </>

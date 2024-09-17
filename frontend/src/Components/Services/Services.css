@@ -56,7 +56,7 @@ h1{
     line-height: 30px;
     font-weight: 200;
 }
-img:hover{
+.pic img:hover{
     width:80%;
-}
+}  
 

@@ -11,6 +11,7 @@ import member3 from './member3.png'
 import logindoctor from './logindoctor.png'
 import loginuser from './loginuser.png'
 import loginsupervisor from './loginsupervisor.png'
+import user1 from './user1.png'
 export const assets = {
     picture1,
     picture2,
@@ -24,5 +25,6 @@ export const assets = {
     member3,
     logindoctor,
     loginuser,
-    loginsupervisor
+    loginsupervisor,
+    user1
 }
