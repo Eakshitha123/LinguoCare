@@ -8,7 +8,7 @@ const GetTherapist = () => {
     <div className="get-therapist">
       <h2>Get Therapist</h2>
       <img class="pic1" src={assets.user1}/>
-      <p>Discover expert therapists tailored to your needs.</p>
+      <p>Browse our list of professional therapists and find the right one for you. Our matching system helps connect you with a therapist that fits your specific needs, ensuring personalized and effective support.</p>
       <button>Find a Therapist</button>
     </div>
   );
