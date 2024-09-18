@@ -1,4 +1,4 @@
-.navTherapist {
+.navSupervisor {
     z-index: 3;
     position: fixed;
     display: flex;
@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-.navTherapist h2 {
+.navSupervisor h2 {
     color: #F0ECE5;
 }
 

@@ -1,5 +1,6 @@
+// /src/Components/NavTherapist/NavTherapist.jsx
 import React from 'react';
-import './NavTherapist.css'; // Import CSS file for therapist navbar
+import './NavTherapist.css';
 import { Link } from 'react-router-dom';
 
 const NavTherapist = ({ scrollToRef, refs }) => {
@@ -10,11 +11,11 @@ const NavTherapist = ({ scrollToRef, refs }) => {
       </div>
       <ul className="nav-links">
         <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link></li>
-        <li onClick={() => scrollToRef(refs.createPlan)}>Create Plan</li>
-        <li onClick={() => scrollToRef(refs.messageS)}>Message Supervisor</li>
         <li onClick={() => scrollToRef(refs.assignedCases)}>Assigned Cases</li>
+        <li onClick={() => scrollToRef(refs.createPlan)}>Create Therapy Plan</li>
         <li onClick={() => scrollToRef(refs.sessionReports)}>Session Reports</li>
-        <li><Link to="/profile">Profile</Link></li>
+        <li onClick={() => scrollToRef(refs.messageS)}>Message My Supervisor</li>
+        <li>Profile</li>
       </ul>
     </div>
   );

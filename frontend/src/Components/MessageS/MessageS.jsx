@@ -1,14 +1,15 @@
+// /src/Components/MessageS/MessageS.js
 import React from 'react';
-import './MessageS.css'; // Make sure to create a corresponding CSS file
-import { assets } from '../../assets/assets'; // Ensure the asset import is correct
+import './MessageS.css';
+import { assets } from '../../assets/assets';
 
 const MessageS = () => {
   return (
     <div className="message-supervisor">
-      <h2>Message Supervisor</h2>
-      <img className="t2" src={assets.msgS} alt="Message Supervisor" /> {/* Update the image source */}
-      <p>Connect with your supervisor to discuss progress, share updates, or ask for guidance. Maintain open communication to ensure smooth collaboration.</p>
-      <button>Message Your Supervisor</button>
+      <h2>Message My Supervisor</h2>
+      <img className="pic5" src={assets.msgS} alt="Message My Supervisor" />
+      <p>Communicate directly with your supervisor. Ask questions, share updates, and receive guidance to ensure your therapy plans are on track.</p>
+      <button>Send a Message</button>
     </div>
   );
 };

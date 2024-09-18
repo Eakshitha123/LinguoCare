@@ -1,6 +1,7 @@
+/* /src/Components/SessionReports/SessionReports.css */
 .session-reports {
-    background-color: #161A30; /* Same background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same box-shadow */
+    background-color: #161A30;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -10,27 +11,26 @@
     margin-top: 150px;
     margin-bottom: 40px;
     width: 1000px;
-    margin-left: 220px;
 }
 
 .session-reports h2 {
-    color: #f6f4f4; /* Same text color */
+    color: #f6f4f4;
     font-size: 28px;
 }
 
-.t4 {
-    width: 300px; /* Similar to .t2 */
+.pic4 {
+    width: 300px;
     border-radius: 18px;
-    transition: width 1s; /* Same transition */
+    transition: 1s;
 }
 
-.t4:hover {
-    width: 40%; /* Same hover effect */
+.pic4:hover {
+    width: 40%;
 }
 
 .session-reports p {
-    color: #ffffff; /* Same text color */
-    font-size: 18px; /* Increased font size as per the updated requirement */
+    color: #ffffff;
+    font-size: 16px;
     font-weight: 600;
     max-width: 800px;
     margin: 20px 0;
@@ -38,12 +38,12 @@
 }
 
 .session-reports button {
-    background-color: #eaebf0; /* Same button background color */
+    background-color: #eaebf0;
     padding: 12px 24px;
     border: none;
     margin-top: 20px;
     border-radius: 50px;
-    color: rgb(10, 10, 10); /* Same text color */
+    color: rgb(10, 10, 10);
     cursor: pointer;
     font-size: 16px;
     font-weight: bolder;
@@ -51,5 +51,5 @@
 }
 
 .session-reports button:hover {
-    background-color: #636d81; /* Same hover background color */
+    background-color: #636d81;
 }

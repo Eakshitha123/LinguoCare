@@ -1,48 +1,47 @@
+// /src/pages/Therapist/Therapist.jsx
 import React, { useRef } from 'react';
-import NavTherapist from "../../Components/NavTherapist/NavTherapist";
-import Footer from "../../Components/Footer/Footer"
-// Temporarily comment out missing components
-import CreatePlan from '../../Components/CreatePlan/CreatePlan';
-import MessageS from '../../Components/MessageS/MessageS';
+import NavTherapist from '../../Components/NavTherapist/NavTherapist';
 import AssignedCases from '../../Components/AssignedCases/AssignedCases';
+import CreatePlan from '../../Components/CreatePlan/CreatePlan';
 import SessionReports from '../../Components/SessionReports/SessionReports';
+import MessageS from '../../Components/MessageS/MessageS';
+import './Therapist.css'; // Import the CSS for the Therapist page
+import Footer from '../../Components/Footer/Footer';
 
-const TherapistPage = () => {
-  const refs = {
-    createPlan: useRef(null),
-    messageS: useRef(null),
-    assignedCases: useRef(null),
-    sessionReports: useRef(null),
+const Therapist = () => {
+  // Refs for smooth scrolling
+  const assignedCasesRef = useRef(null);
+  const createPlanRef = useRef(null);
+  const sessionReportsRef = useRef(null);
+  const messageSRef = useRef(null);
+
+  // Function to handle smooth scrolling to a section
+  const scrollToRef = (ref) => {
+    if (ref.current) {
+      window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
+    }
   };
 
-  const scrollToRef = (ref) => window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
-
   return (
-    <div>
-      {/* Therapist Navbar */}
-      <NavTherapist scrollToRef={scrollToRef} refs={refs} />
-
-      {/* Comment out the components for now */}
-      
-      <div ref={refs.createPlan}>
-        <CreatePlan />
+    <div className="therapist">
+      <NavTherapist scrollToRef={scrollToRef} refs={{ assignedCases: assignedCasesRef, createPlan: createPlanRef, sessionReports: sessionReportsRef, messageS: messageSRef }} />
+      <div className="therapist-page">
+        <div ref={assignedCasesRef}>
+          <AssignedCases />
+        </div>
+        <div ref={createPlanRef}>
+          <CreatePlan />
+        </div>
+        <div ref={sessionReportsRef}>
+          <SessionReports />
+        </div>
+        <div ref={messageSRef}>
+          <MessageS />
+        </div>
       </div>
-       
-      <div ref={refs.messageS}>
-        <MessageS />
-      </div>
-      
-      <div ref={refs.assignedCases}>
-        <AssignedCases />
-      </div>
-       
-      <div ref={refs.sessionReports}>
-        <SessionReports />
-      </div>   
-      
-      <Footer/>
+      <Footer />
     </div>
   );
 };
 
-export default TherapistPage;
+export default Therapist;

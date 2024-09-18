@@ -1,6 +1,7 @@
+/* /src/Components/AssignedCases/AssignedCases.css */
 .assigned-cases {
-    background-color: #161A30; /* Updated background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for emphasis */
+    background-color: #161A30;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -10,27 +11,26 @@
     margin-top: 150px;
     margin-bottom: 40px;
     width: 1000px;
-    margin-left: 220px;
 }
 
 .assigned-cases h2 {
-    color: #ecf0f1; /* Light color for text */
+    color: #f6f4f4;
     font-size: 28px;
 }
 
-.t3 {
+.pic2 {
     width: 300px;
     border-radius: 18px;
-    transition: width 1s;
+    transition: 1s;
 }
 
-.t3:hover {
-    width: 40%; /* Adjusted to hover effect similar to .t2 */
+.pic2:hover {
+    width: 40%;
 }
 
 .assigned-cases p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     max-width: 800px;
     margin: 20px 0;
@@ -38,12 +38,12 @@
 }
 
 .assigned-cases button {
-    background-color: #dfe6e9; /* Updated button background color */
+    background-color: #eaebf0;
     padding: 12px 24px;
     border: none;
     margin-top: 20px;
     border-radius: 50px;
-    color: #2d3436; /* Darker text color for better contrast */
+    color: rgb(10, 10, 10);
     cursor: pointer;
     font-size: 16px;
     font-weight: bolder;
@@ -51,5 +51,5 @@
 }
 
 .assigned-cases button:hover {
-    background-color: #636d81; /* Same hover color as .message-supervisor */
+    background-color: #636d81;
 }

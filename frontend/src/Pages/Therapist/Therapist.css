@@ -1,0 +1,19 @@
+/* /src/pages/Therapist/Therapist.css */
+.therapist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.therapist-page {
+    width: 100%; /* Ensure the page takes the full width */
+    padding-top: 80px; /* Space for the fixed navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.therapist-page > div {
+    margin-bottom: 40px; /* Add some spacing between sections */
+}

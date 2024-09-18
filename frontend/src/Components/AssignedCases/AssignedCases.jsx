@@ -1,13 +1,14 @@
+// /src/Components/AssignedCases/AssignedCases.js
 import React from 'react';
-import './AssignedCases.css'; // Make sure to create a corresponding CSS file
-import { assets } from '../../assets/assets'; // Ensure the asset import is correct
+import './AssignedCases.css';
+import { assets } from '../../assets/assets';
 
 const AssignedCases = () => {
   return (
     <div className="assigned-cases">
       <h2>Assigned Cases</h2>
-      <img className="t3" src={assets.cases} alt="Assigned Cases" /> {/* Update the image source */}
-      <p>View and manage your assigned cases. Keep track of progress, update statuses, and ensure timely completion.</p>
+      <img className="pic2" src={assets.cases} alt="Assigned Cases" />
+      <p>View and manage your assigned cases. Keep track of your clients, update their therapy plans, and ensure they are receiving the personalized support they need.</p>
       <button>View Assigned Cases</button>
     </div>
   );
