@@ -6,6 +6,7 @@ import MessageT from '../../Components/MessageT/MessageT';
 import Progress from '../../Components/Progress/Progress';
 import Sessions from '../../Components/Sessions/Sessions';
 import './User.css'; // Import the CSS for the User page
+import Footer from '../../Components/Footer/Footer';
 
 const User = () => {
   // Refs for smooth scrolling
@@ -38,6 +39,7 @@ const User = () => {
           <Sessions />
         </div>
       </div>
+      <Footer/>
       </div>
   );
 };

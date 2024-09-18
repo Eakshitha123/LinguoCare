@@ -19,6 +19,10 @@ import createplan from './createplan.png'
 import msgS from './msgS.png'
 import cases from './cases.png'
 import reports from './reports.png'
+import sup1 from './sup1.jpeg'
+import sup2 from './sup2.jpeg'
+import sup3 from './sup3.jpeg'
+import sup4 from './sup4.jpeg'
 export const assets = {
     picture1,
     picture2,
@@ -40,5 +44,9 @@ export const assets = {
     createplan,
     msgS,
     cases,
-    reports
+    reports,
+    sup1,
+    sup2,
+    sup3,
+    sup4
 }

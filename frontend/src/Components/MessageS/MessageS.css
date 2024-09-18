@@ -1,3 +1,4 @@
+/* /src/Components/MessageS/MessageS.css */
 .message-supervisor {
     background-color: #161A30;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -10,7 +11,6 @@
     margin-top: 150px;
     margin-bottom: 40px;
     width: 1000px;
-    margin-left: 220px;
 }
 
 .message-supervisor h2 {
@@ -18,19 +18,19 @@
     font-size: 28px;
 }
 
-.t2 {
+.pic5 {
     width: 300px;
     border-radius: 18px;
     transition: 1s;
 }
 
-.t2:hover {
+.pic5:hover {
     width: 40%;
 }
 
 .message-supervisor p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     max-width: 800px;
     margin: 20px 0;
