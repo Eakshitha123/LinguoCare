@@ -1,34 +1,55 @@
 /* /src/Components/Sessions/Sessions.css */
-.sessions {
-    background-color: #e0e7ff;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-  }
-  
-  .sessions h2 {
-    font-size: 28px;
-    color: #1e3a8a;
-  }
-  
-  .sessions p {
-    font-size: 16px;
-    color: #334155;
-    margin: 15px 0;
-  }
-  
-  .sessions button {
-    background-color: #1d4ed8;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .sessions button:hover {
-    background-color: #1e40af;
-  }
-  
+.sessions-section {
+  background-color: #161A30;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  width: 1000px;
+}
+
+.sessions-section h2 {
+  color: #f6f4f4;
+  font-size: 28px;
+}
+
+.pic4 {
+  width: 300px;
+  border-radius: 18px;
+  transition: width 0.5s;
+}
+
+.pic4:hover {
+  width: 40%;
+}
+
+.sessions-section p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.sessions-section button {
+  background-color: #eaebf0;
+  padding: 12px 24px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 50px;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: background 0.3s;
+}
+
+.sessions-section button:hover {
+  background-color: #636d81;
+}

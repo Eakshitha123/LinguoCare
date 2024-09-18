@@ -1,35 +1,55 @@
 /* /src/Components/MessageT/MessageT.css */
-.message-t {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-  }
-  
-  .message-t h2 {
-    font-size: 28px;
-    color: #444;
-  }
-  
-  .message-t p {
-    color: #777;
-    font-size: 16px;
-    margin: 15px 0;
-  }
-  
-  .message-t button {
-    background-color: #28a745;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .message-t button:hover {
-    background-color: #218838;
-  }
-  
+.message-therapist {
+  background-color: #161A30;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  width: 1000px;
+}
+
+.message-therapist h2 {
+  color: #f6f4f4;
+  font-size: 28px;
+}
+
+.pic2 {
+  width: 300px;
+  border-radius: 18px;
+  transition: width 0.5s;
+}
+
+.pic2:hover {
+  width: 40%;
+}
+
+.message-therapist p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.message-therapist button {
+  background-color: #eaebf0;
+  padding: 12px 24px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 50px;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: background 0.3s;
+}
+
+.message-therapist button:hover {
+  background-color: #636d81;
+}
