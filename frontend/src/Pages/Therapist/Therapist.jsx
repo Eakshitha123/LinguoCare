@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import NavTherapist from "../../Components/NavTherapist/NavTherapist";
 import Footer from "../../Components/Footer/Footer"
+// Temporarily comment out missing components
 import CreatePlan from '../../Components/CreatePlan/CreatePlan';
 import MessageS from '../../Components/MessageS/MessageS';
 import AssignedCases from '../../Components/AssignedCases/AssignedCases';
@@ -18,10 +19,10 @@ const TherapistPage = () => {
 
   return (
     <div>
-      
+      {/* Therapist Navbar */}
       <NavTherapist scrollToRef={scrollToRef} refs={refs} />
 
-     
+      {/* Comment out the components for now */}
       
       <div ref={refs.createPlan}>
         <CreatePlan />

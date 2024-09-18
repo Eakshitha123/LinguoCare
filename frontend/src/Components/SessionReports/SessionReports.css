@@ -1,0 +1,55 @@
+.session-reports {
+    background-color: #161A30; /* Same background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same box-shadow */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 1000px;
+    margin-left: 220px;
+}
+
+.session-reports h2 {
+    color: #f6f4f4; /* Same text color */
+    font-size: 28px;
+}
+
+.t4 {
+    width: 300px; /* Similar to .t2 */
+    border-radius: 18px;
+    transition: width 1s; /* Same transition */
+}
+
+.t4:hover {
+    width: 40%; /* Same hover effect */
+}
+
+.session-reports p {
+    color: #ffffff; /* Same text color */
+    font-size: 18px; /* Increased font size as per the updated requirement */
+    font-weight: 600;
+    max-width: 800px;
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
+.session-reports button {
+    background-color: #eaebf0; /* Same button background color */
+    padding: 12px 24px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: rgb(10, 10, 10); /* Same text color */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: background 0.3s;
+}
+
+.session-reports button:hover {
+    background-color: #636d81; /* Same hover background color */
+}
