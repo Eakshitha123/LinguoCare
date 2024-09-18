@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import NavTherapist from "../../Components/NavTherapist/NavTherapist";
+import Footer from "../../Components/Footer/Footer"
+import CreatePlan from '../../Components/CreatePlan/CreatePlan';
+import MessageS from '../../Components/MessageS/MessageS';
+import AssignedCases from '../../Components/AssignedCases/AssignedCases';
+import SessionReports from '../../Components/SessionReports/SessionReports';
 
-const Therapist = () => {
+const TherapistPage = () => {
+  const refs = {
+    createPlan: useRef(null),
+    messageS: useRef(null),
+    assignedCases: useRef(null),
+    sessionReports: useRef(null),
+  };
+
+  const scrollToRef = (ref) => window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
+
   return (
     <div>
-      <h1>Welcome, Therapist!</h1>
+      
+      <NavTherapist scrollToRef={scrollToRef} refs={refs} />
+
+     
+      
+      <div ref={refs.createPlan}>
+        <CreatePlan />
+      </div>
+       
+      <div ref={refs.messageS}>
+        <MessageS />
+      </div>
+      
+      <div ref={refs.assignedCases}>
+        <AssignedCases />
+      </div>
+       
+      <div ref={refs.sessionReports}>
+        <SessionReports />
+      </div>   
+      
+      <Footer/>
     </div>
   );
 };
 
-export default Therapist;
+export default TherapistPage;

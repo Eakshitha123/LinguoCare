@@ -15,6 +15,10 @@ import user1 from './user1.png'
 import user2 from './user2.png'
 import user3 from './user3.png'
 import user4 from './user4.png'
+import createplan from './createplan.png'
+import msgS from './msgS.png'
+import cases from './cases.png'
+import reports from './reports.png'
 export const assets = {
     picture1,
     picture2,
@@ -32,5 +36,9 @@ export const assets = {
     user1,
     user2,
     user3,
-    user4
+    user4,
+    createplan,
+    msgS,
+    cases,
+    reports
 }

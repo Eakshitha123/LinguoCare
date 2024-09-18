@@ -1,0 +1,59 @@
+.create-plan {
+    background-color: #161A30;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 1000px;
+    margin-left:220px;
+  }
+  
+  .create-plan h2 {
+    color: #f6f4f4;
+    font-size: 28px;
+  }
+  .t1{
+
+    width:300px;
+    border-radius: 18px;
+    transition: 1s;
+   
+  }
+
+  .t1:hover
+  {
+     width:40%; 
+   
+  }
+  
+  .create-plan p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 20px 0;
+    padding-top: 20px;
+  }
+  
+  .create-plan button {
+    background-color: #eaebf0;
+    padding: 12px 24px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: background 0.3s;
+  }
+  
+  .create-plan button:hover {
+    background-color: #636d81;
+  }
+  
