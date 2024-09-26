@@ -4,25 +4,29 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
-import Therapist from './Pages/Therapist/Therapist'; // Therapist page
-import Supervisor from './Pages/Supervisor/Supervisor'; // Import the Supervisor page
 import User from './Pages/User/User';
+import FindTherapist from './Pages/FindTherapist/FindTherapist';
+import MessageTherapist from './Pages/MessageTherapist/MessageTherapist';
+import ViewProgress from './Pages/ViewProgress/ViewProgress';
+import ViewSessions from './Pages/ViewSessions/ViewSessions';
 
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* Navbar will be displayed on all pages */}
-      {/* <Navbar /> */}
-
       <div className='app'>
         <Routes>
-          <Route path='/' element={<Home />} /> {/* Home Page */}
-          <Route path='/login' element={<Login />} /> {/* Login Page */}
-          <Route path='/therapist' element={<Therapist />} /> {/* Therapist Page */}
-          <Route path='/supervisor' element={<Supervisor />} /> {/* Supervisor Page */}
-          <Route path='/user' element={<User/>}/>
+          {/* Home and Login Pages */}
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          
+          {/* User Pages */}
+          <Route path='/user' element={<User />} />
+          <Route path='/find-therapist' element={<FindTherapist />} />
+          <Route path='/message-therapist' element={<MessageTherapist />} />
+          <Route path='/view-progress' element={<ViewProgress />} />
+          <Route path='/view-sessions' element={<ViewSessions />} />
         </Routes>
       </div>
     </>
