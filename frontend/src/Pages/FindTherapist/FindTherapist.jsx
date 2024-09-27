@@ -4,6 +4,14 @@ const FindTherapist = () => {
   const [therapists] = useState([
     { name: 'Therapist A', specialization: 'Speech Delay' },
     { name: 'Therapist B', specialization: 'Fluency Disorder' },
+    {name:'Therapist C',specialization: 'Issues Related to Autism'},
+    { name: 'Therapist D', specialization: 'Muteness' },
+    { name: 'Therapist E', specialization: 'Aphasia' },
+    { name: 'Therapist F', specialization: 'Stuttering' },
+    { name: 'Therapist G', specialization: 'Apraxia' },
+    { name: 'Therapist H', specialization: 'Dysarthria' },
+    { name: 'Therapist I', specialization: 'Cluttering' },
+
   ]);
   const handleSelect = (therapist) => {
     localStorage.setItem('selectedTherapist', JSON.stringify(therapist));
