@@ -12,7 +12,6 @@ const Supervisor = () => {
   const manageTRef = useRef(null);
   const reviewPlanRef = useRef(null);
   const evaluateSessionsRef = useRef(null);
-  const messageTherapistRef = useRef(null);
 
   // Function to handle smooth scrolling to a section
   const scrollToRef = (ref) => {
@@ -28,8 +27,7 @@ const Supervisor = () => {
         refs={{ 
           manageT: manageTRef, 
           reviewPlan: reviewPlanRef, 
-          evaluateSessions: evaluateSessionsRef, 
-          messageTherapist: messageTherapistRef 
+          evaluateSessions: evaluateSessionsRef
         }} 
       />
       <div className="supervisor-page">
@@ -41,9 +39,6 @@ const Supervisor = () => {
         </div>
         <div ref={evaluateSessionsRef}>
           <EvaluateSessions />
-        </div>
-        <div ref={messageTherapistRef}>
-          <MessageTherapist />
         </div>
       </div>
       <Footer/>

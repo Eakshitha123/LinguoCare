@@ -11,7 +11,6 @@ import Footer from '../../Components/Footer/Footer';
 const User = () => {
   // Refs for smooth scrolling
   const getTherapistRef = useRef(null);
-  const messageTRef = useRef(null);
   const progressRef = useRef(null);
   const sessionsRef = useRef(null);
 
@@ -24,13 +23,10 @@ const User = () => {
 
   return (
  <div className="user">
-      <NavUser scrollToRef={scrollToRef} refs={{ getTherapist: getTherapistRef, messageT: messageTRef, progress: progressRef, sessions: sessionsRef }} />
+      <NavUser scrollToRef={scrollToRef} refs={{ getTherapist: getTherapistRef,progress: progressRef, sessions: sessionsRef }} />
       <div className="user-page">
         <div ref={getTherapistRef}>
           <GetTherapist />
-        </div>
-        <div ref={messageTRef}>
-          <MessageT />
         </div>
         <div ref={progressRef}>
           <Progress />

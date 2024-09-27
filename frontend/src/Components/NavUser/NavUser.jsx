@@ -15,7 +15,6 @@ const NavUser = ({ scrollToRef, refs }) => {
           </Link>
         </li>
         <li onClick={() => scrollToRef(refs.getTherapist)}>Get Therapist</li>
-        <li onClick={() => scrollToRef(refs.messageT)}>Message Therapist</li>
         <li onClick={() => scrollToRef(refs.progress)}>My Progress</li>
         <li onClick={() => scrollToRef(refs.sessions)}>My Sessions</li>
         <li>

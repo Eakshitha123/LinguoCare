@@ -13,7 +13,6 @@ const Therapist = () => {
   const assignedCasesRef = useRef(null);
   const createPlanRef = useRef(null);
   const sessionReportsRef = useRef(null);
-  const messageSRef = useRef(null);
 
   // Function to handle smooth scrolling to a section
   const scrollToRef = (ref) => {
@@ -24,7 +23,7 @@ const Therapist = () => {
 
   return (
     <div className="therapist">
-      <NavTherapist scrollToRef={scrollToRef} refs={{ assignedCases: assignedCasesRef, createPlan: createPlanRef, sessionReports: sessionReportsRef, messageS: messageSRef }} />
+      <NavTherapist scrollToRef={scrollToRef} refs={{ assignedCases: assignedCasesRef, createPlan: createPlanRef, sessionReports: sessionReportsRef}} />
       <div className="therapist-page">
         <div ref={assignedCasesRef}>
           <AssignedCases />
@@ -34,9 +33,6 @@ const Therapist = () => {
         </div>
         <div ref={sessionReportsRef}>
           <SessionReports />
-        </div>
-        <div ref={messageSRef}>
-          <MessageS />
         </div>
       </div>
       <Footer />
