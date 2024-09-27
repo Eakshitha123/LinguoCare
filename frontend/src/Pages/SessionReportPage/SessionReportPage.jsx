@@ -1,12 +1,18 @@
-// /src/Pages/SessionReportPage/SessionReportPage.jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 const SessionReportPage = () => {
+  const [report, setReport] = useState('');
+
+  const handleSaveReport = () => {
+    localStorage.setItem('progress', report);
+    alert('Session report saved successfully.');
+  };
+
   return (
     <div>
-      <h2>Session Reports</h2>
-      <p>In this section, therapists can review detailed reports of therapy sessions, analyze client progress, and adjust strategies accordingly.</p>
-      {/* Additional functionality for viewing reports can be added here */}
+      <h2>Session Report</h2>
+      <textarea value={report} onChange={(e) => setReport(e.target.value)} />
+      <button onClick={handleSaveReport}>Save Report</button>
     </div>
   );
 };

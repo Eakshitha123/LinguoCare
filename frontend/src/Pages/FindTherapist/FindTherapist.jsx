@@ -1,12 +1,24 @@
-// /src/Pages/FindTherapist/FindTherapist.js
-import React from 'react';
+import React, { useState } from 'react';
 
 const FindTherapist = () => {
+  const [therapists] = useState([
+    { name: 'Therapist A', specialization: 'Speech Delay' },
+    { name: 'Therapist B', specialization: 'Fluency Disorder' },
+  ]);
+  const handleSelect = (therapist) => {
+    localStorage.setItem('selectedTherapist', JSON.stringify(therapist));
+  };
+
   return (
     <div>
       <h2>Find a Therapist</h2>
-      <p>Here, the user will be able to browse and select a therapist based on their needs.</p>
-      {/* Additional functionality can be added here */}
+      {therapists.map((therapist, index) => (
+        <div key={index}>
+          <h3>{therapist.name}</h3>
+          <p>Specialization: {therapist.specialization}</p>
+          <button onClick={() => handleSelect(therapist)}>Select</button>
+        </div>
+      ))}
     </div>
   );
 };

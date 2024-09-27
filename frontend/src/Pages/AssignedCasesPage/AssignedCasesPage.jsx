@@ -1,12 +1,20 @@
-// /src/Pages/AssignedCasesPage/AssignedCasesPage.jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 const AssignedCasesPage = () => {
+  const [cases] = useState([
+    { user: 'User 1', caseDetails: 'Speech Delay' },
+    { user: 'User 2', caseDetails: 'Fluency Disorder' },
+  ]);
+
   return (
     <div>
       <h2>Assigned Cases</h2>
-      <p>Here, therapists can view and manage their assigned cases, keep track of clients, and update therapy plans as needed.</p>
-      {/* Additional functionality for managing cases can be added here */}
+      {cases.map((assignedCase, index) => (
+        <div key={index}>
+          <h3>{assignedCase.user}</h3>
+          <p>{assignedCase.caseDetails}</p>
+        </div>
+      ))}
     </div>
   );
 };

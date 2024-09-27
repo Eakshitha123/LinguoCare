@@ -1,12 +1,12 @@
-// /src/Pages/ViewProgress/ViewProgress.js
 import React from 'react';
 
 const ViewProgress = () => {
+  const progress = JSON.parse(localStorage.getItem('progress')) || 'No progress recorded yet.';
+
   return (
     <div>
-      <h2>View My Progress</h2>
-      <p>This page displays the user's progress reports added by the therapist.</p>
-      {/* Progress details can be displayed here */}
+      <h2>View Progress</h2>
+      <p>{progress}</p>
     </div>
   );
 };
