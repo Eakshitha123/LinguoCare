@@ -14,7 +14,7 @@ const NavSupervisor = ({ scrollToRef, refs }) => {
         <li onClick={() => scrollToRef(refs.reviewPlan)}>Review Therapy Plans</li>
         <li onClick={() => scrollToRef(refs.evaluateSessions)}>Evaluate Sessions</li>
         <li onClick={() => scrollToRef(refs.messageTherapist)}>Message My Therapists</li>
-        <li>Profile</li>
+        <li><Link to="/supervisor-profile">Profile</Link></li>
       </ul>
     </div>
   );

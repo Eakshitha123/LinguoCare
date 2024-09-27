@@ -15,7 +15,7 @@ const NavTherapist = ({ scrollToRef, refs }) => {
         <li onClick={() => scrollToRef(refs.createPlan)}>Create Therapy Plan</li>
         <li onClick={() => scrollToRef(refs.sessionReports)}>Session Reports</li>
         <li onClick={() => scrollToRef(refs.messageS)}>Message My Supervisor</li>
-        <li>Profile</li>
+        <li><Link to="/therapist-profile">Profile</Link></li>
       </ul>
     </div>
   );

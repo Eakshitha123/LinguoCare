@@ -21,6 +21,8 @@ import EvaluateSessionsPage from './Pages/EvaluateSessionsPage/EvaluateSessionsP
 import ReviewPlanPage from './Pages/ReviewPlanPage/ReviewPlanPage';
 import MessageTPage from './Pages/MessageTPage/MessageTPage';
 import ProfileUser from './Pages/ProfileUser/ProfileUser';
+import ProfileTherapist from './Pages/ProfileTherapist/ProfileTherapist';
+import ProfileSupervisor from './Pages/ProfileSupervisor/ProfileSupervisor';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -55,7 +57,10 @@ const App = () => {
           <Route path="/message-t-page" element={<MessageTPage />} />
 
           
-          <Route path='/user-profile' element={<ProfileUser />} /> 
+          <Route path='/user-profile' element={<ProfileUser />} />
+          <Route path='/therapist-profile' element={<ProfileTherapist/>}/>
+          <Route path='/supervisor-profile' element={<ProfileSupervisor/>} />
+
 
         </Routes>
       </div>
